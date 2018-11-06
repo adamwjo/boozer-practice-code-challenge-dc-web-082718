@@ -1,12 +1,24 @@
 import React from 'react'
 
 const CocktailDisplay = (props) => {
+  // debugger;
+
+
+
+  let items = []
+  for (let i = 0; i < props.currentCocktail.coctailProportion.length; i++) {
+    items.push(<li>{props.currentCocktail.coctailProportion[i].amount} {props.currentCocktail.coctailIngredients[i].name}</li>);
+  }
+
   return (
     <div id="cocktail-display">
-      <h1>{/* Cocktail Name */}</h1>
-      <h3>{/* Cocktail Description */}</h3>
-      <p>{/* Cocktail Instructions */}</p>
-    </div>
+      <h1>{props.currentCocktail.name}</h1>
+      <p>{props.currentCocktail.description}</p>
+      <p>{props.currentCocktail.instructions}</p>
+      <p><ul>{
+        items
+      }</ul></p>
+      </div>
   )
 }
 

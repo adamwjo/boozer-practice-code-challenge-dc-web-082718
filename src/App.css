@@ -14,6 +14,14 @@
   color: white;
 }
 
+div.scrollable {
+   width: 100vh;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+   overflow: scroll;
+}
+
 .App-title {
   font-size: 1.5em;
 }
