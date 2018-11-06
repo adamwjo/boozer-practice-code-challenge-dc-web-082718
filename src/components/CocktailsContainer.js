@@ -14,8 +14,8 @@ class CocktailsContainer extends Component {
       currentCocktail: {
         coctailProportion: [],
         coctailIngredients: []
+      },
 
-      }
     }
   }
 
